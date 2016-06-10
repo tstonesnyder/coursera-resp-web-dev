@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 4</title>
+
+	<link href="bootstrap.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+
+	<!-- import jQuery -->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body onload="setup()">
+	<div class="container">
+		<h1>Image Gallery</h1>
+		<div class="row img-bar">
+			<div class="col-xs-6 col-sm-3">
+				<img id="image1" class="small-img" src="hippo_640.png" alt="hippo"/> 
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<img id="image2" class="small-img" src="kangaroo_640.png" alt="kangaroo"/> 
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<img id="image3" class="small-img" src="rabbit_640.png" alt="rabbit"/> 
+			</div>
+			<div class="col-xs-6 col-sm-3">
+				<img id="image4" class="small-img" src="sheep_640.png" alt="sheep"/> 
+			</div>
+		</div>
+		<div class="row ">
+			<div class="col-xs-12">
+				<p class="info">Click on a small image above to display it full size below. Use the left/right arrow buttons to navigate through the images. Use the frame buttons to control how the large image is displayed.</p>				
+			</div>
+		</div>
+		<div class="row frame-btn-bar">
+			<div class="col-xs-4">
+				<button id="circle-frame-btn" class="btn btn-primary btn-md">Circular Frame</button>				
+			</div>
+			<div class="col-xs-4 btn-div-ctr">
+				<button id="drop-frame-btn" class="btn btn-primary btn-md">Drop Shadow Frame</button>				
+			</div>
+			<div class="col-xs-4 btn-div-rt">
+				<button id="rounded-frame-btn" class="btn btn-primary btn-md">Rounded Corner Frame</button>				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-1 nav-btn-div">
+				<button id="back-btn" class="btn btn-primary btn-lg">&lt;</button>
+			</div>
+			<div class="col-xs-10">
+				<p id="big-img-caption"></p>
+				<img id="big-img" class="big-img img-responsive center-block" src="" alt=""/> 
+			</div>
+			<div class="col-xs-1 nav-btn-div">
+				<button id="fwd-btn" class="btn btn-primary btn-lg">&gt;</button>
+			</div>
+		</div>
+	</div>
+	<!-- this link doesn't work if moved to the <head> section -->
+	<script src="javascript.js" type="text/javascript"></script>
+</body>
+</html>
