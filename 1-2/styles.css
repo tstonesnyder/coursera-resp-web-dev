@@ -1,0 +1,41 @@
+/* set the styling for h1 tags */
+h1 {
+    /* change the text color */
+    color:purple;
+    /* set the background to black */
+    background:#000000;
+    /* center the text */
+    text-align:center;
+    /* create a 5 pixel, double, gold border */
+    border:5px double gold;
+    /* change the font to sans-serif, preferrably Arial */
+    font-family:Arial, sans-serif;
+    /* increase the space above the heading */
+    margin-top:30px;
+    /* increase the space between the text and the border
+    (on the top and bottom only) */
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+ /* set the styling for when the mouse hovers over an h1 tag */
+ h1:hover {
+    /* change the text color */
+    color:black;
+    /* set the background to black */
+    background:purple;
+    /* change the border to dotted */
+    border-style:dotted;
+    /* increase the character spacing */
+    letter-spacing:8px;
+    /* change the cursor to the crosshair cursor */ 
+    cursor:crosshair;
+}
+
+/* This affects the first letter of the h1 tag. */
+h1::first-letter {
+    /* Make the first letter of the heading big */
+    font-size:40pt;
+    /* Make the first letter of the heading italicized */
+    font-style:italic;
+}
