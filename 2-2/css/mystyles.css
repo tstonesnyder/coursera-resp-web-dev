@@ -1,0 +1,65 @@
+.person-pic {
+    width:50px;
+}
+
+.jumbotron {
+    /* fixed navbar overlaps top of jumbotron */
+    margin-top: 75px;
+   /* margin: 0px auto;
+   padding-top: 100px; */
+}
+
+.row {
+    /* add margin so row borders don't touch edge of window */
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.row-content {
+    /* border-top: 1px solid black; */
+    border-top: 2px ridge;
+    padding-bottom:20px;
+    padding-top: 10px;
+}
+
+.row-content:last-of-type {
+    /* separate the last row from the bottom of the page */
+    padding-bottom:50px;
+}
+
+/* elements inside a <nav> with this class */
+nav .label-info {
+    display:inline-block; 
+    margin-top:17px; 
+}
+
+/* elements inside a <nav> with both of these classes */
+nav .navbar-right.label-info {
+    /* needed to move the element away from right edge of navbar */
+    margin-right:1px;
+}
+
+/* elements inside a <nav> with BOTH of these classes */
+nav .visible-xs-inline.label-info {
+    /* needed to position the element 
+       to the left of the button on the collapsed navbar */
+    position:absolute; 
+    right:75px;
+}
+
+/* override what bootstrap does here (if viewport is 768px or wider) */
+@media (min-width: 768px) {
+    .dl-horizontal dt {
+        text-align: left;
+        width: 100px;
+    }
+
+    .dl-horizontal dd {
+        margin-left: 115px;
+    }
+}
+@media (max-width: 767px) {
+    .dl-horizontal dd {
+        margin-left: 15px;
+    }
+}

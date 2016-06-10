@@ -1,0 +1,58 @@
+/* put your css code here */
+body {
+	/* move out from underneath the fixed navbar at the top of page */
+	/* By default, the navbar is 50px high. */
+	padding: 60px 30px 30px 20px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.animal-pics-row {
+	text-align:center;
+	margin-bottom: 20px;
+}
+
+.animal-caption-row {
+	text-align: justify;
+}
+
+.category-thumbnail, .animal-thumbnail, .img-thumbnail {
+	/* center the text underneath */
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.crop-img {
+	padding:5px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.category-thumbnail .crop-img, .animal-thumbnail .crop-img {
+	max-height: 200px;
+	max-width: 100%;
+	cursor: pointer;
+}
+
+.img-thumbnail .crop-img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+/* --------------------------- CAROUSEL STYLES --------------------------- */
+#mycarousel {
+	background-color: #000;
+}
+
+.item {
+	border: 10px solid #000;
+	/* if put height here, the captions move down also */
+	height: 70vh;
+}
+
+.carousel-caption h3 {
+	margin-bottom: 0;
+}
